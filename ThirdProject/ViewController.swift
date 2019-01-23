@@ -9,35 +9,47 @@
 import UIKit
 
 var pressedButton = false
-/*
- pressedButton = false (PAST button was pressed)
- pressedButton = true (FUTURE button was pressed)
- */
+
+/************************************************
+ pressedButton - boolean variable used to hold
+  the information of which button was pressed
+    = false (PAST button was pressed)
+    = true (FUTURE button was pressed)
+ ************************************************/
 
 class ViewController: UIViewController {
-
+    
+/************************************************
+     ViewController - class that inherits attributes
+     and functions from UIViewController class
+************************************************/
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+   
+    /************************************************
+     viewDidLoad - function that is inherited from
+    UIViewController class and it is overriden
+     ************************************************/
     
     @IBAction func pastButton(_ sender: UIButton) {
         pressedButton = false
     }
+    /************************************************
+     pastButton - function associated with the past
+     button. When it is pressed the variable pressedButton
+     is set to false
+    ************************************************/
     
     
     @IBAction func futureButton(_ sender: UIButton) {
         pressedButton = true
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    /************************************************
+     futureButton - function associated with the future
+     button. When it is pressed the variable pressedButton
+     is set to true
+     ************************************************/
 
 }

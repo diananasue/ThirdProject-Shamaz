@@ -9,7 +9,12 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    /************************************************
+     SecondViewController - class that inherits attributes
+     and functions from UIViewController class
+     ************************************************/
+    
     let pastActivity = [
         "your day",
         "something you did",
@@ -24,6 +29,12 @@ class SecondViewController: UIViewController {
         "a book that you started"
     ]
     
+    /************************************************
+     pastActivity - constant array used to hold
+     the past activity that are used to form the
+     past prompt to be displayed
+     ************************************************/
+    
     let pastTimeIndicator = [
         "2 days ago",
         "1 week ago",
@@ -32,12 +43,24 @@ class SecondViewController: UIViewController {
         "yesterday"
     ]
     
+    /************************************************
+     pastTimeIndicator - constant array used to hold
+     the past time indicator that are used to form the
+     past prompt to be displayed
+     ************************************************/
+    
     let futureActivity = [
         "what you want to do",
         "where you will be",
         "what you plan to learn",
         "which country/place are you planning on visiting"
     ]
+    
+    /************************************************
+     futureActivity - constant array used to hold
+     the future activity that are used to form the
+     future prompt to be displayed
+     ************************************************/
     
     let futureTimeIndicator = [
         "next year",
@@ -48,11 +71,30 @@ class SecondViewController: UIViewController {
         "on New Years Eve"
     ]
     
+    /************************************************
+     futureTimeIndicator - constant array used to hold
+     the future time indicator that are used to form the
+     future prompt to be displayed
+     ************************************************/
+    
     override func viewDidLoad() {
+        
+        /************************************************
+         viewDidLoad - function that is inherited from
+         UIViewController class and it is overriden
+         ************************************************/
+        
         super.viewDidLoad()
         
         var activityIndex = 0
         var timeIndicatorIndex = 0
+        
+        /************************************************
+         activityIndex - integer variable that is used to
+         hold the index of the activity to be displayed
+         timeIndicatorIndex - integer variable that is used
+         to hold the index of the time indicator to be displayed
+         ************************************************/
         
         if pressedButton == false
         {
@@ -67,16 +109,49 @@ class SecondViewController: UIViewController {
             promptQuestion.text = "Say" + " " + futureActivity[activityIndex] + " " + futureTimeIndicator[timeIndicatorIndex]
         }
         
-        // Do any additional setup after loading the view.
+        /************************************************
+         if the past button was pressed, a random number
+         is generated between 0 and the number of elements
+         from the pastActivity array (11 in this case)
+         the same is done for the time indicator
+         the promptQuestion label is attributed with the
+         text composed from "Describe", past activity and
+         time indicator
+         
+         else if the future button was pressed a random number
+         is generated between 0 and the number of elements
+         from the futureActivity array (4 in this case)
+         the same is done for the time indicator
+         the promptQuestion label is attributed with the
+         text composed from "Say", future activity and
+         time indicator
+         ************************************************/
     }
+    
     
     @IBOutlet weak var promptQuestion: UILabel!
     
-    @IBOutlet weak var responseToQuestion: UITextField!
+    /************************************************
+     promptQuestion - label that will be filled with
+     a prompt question formed based on which button
+     was pressed
+     ************************************************/
+    
     
     @IBAction func whosNextButton(_ sender: UIButton) {
         whosNextLabel.text = "The next player is player number " +  String((arc4random_uniform(10)) + 1)
     }
+    
+    /************************************************
+     whosNextButton - function associated with the
+     who's next button which will set the text to
+     be displayed within the label whosNextLabel
+     ************************************************/
 
     @IBOutlet weak var whosNextLabel: UILabel!
+    
+    /************************************************
+     whosNextLabel - label that will be filled with
+     a number representing the next player
+     ************************************************/
 }

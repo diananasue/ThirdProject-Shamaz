@@ -11,8 +11,6 @@
 		9AAEBBE321F64F610075842B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAEBBE121F64F610075842B /* SecondViewController.swift */; };
 		9AAEBBF821F657490075842B /* past.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AAEBBF221F657490075842B /* past.jpg */; };
 		9AAEBBF921F657490075842B /* future.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AAEBBF321F657490075842B /* future.jpg */; };
-		9AAEBBFA21F657490075842B /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AAEBBF421F657490075842B /* background.jpg */; };
-		9AAEBBFB21F657490075842B /* appName.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AAEBBF521F657490075842B /* appName.jpg */; };
 		9AAEBBFC21F657490075842B /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AAEBBF621F657490075842B /* backButton.png */; };
 		9AAEBBFD21F657490075842B /* small-button-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AAEBBF721F657490075842B /* small-button-hi.png */; };
 		9AC0D77221CC00BF0070E7A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC0D77121CC00BF0070E7A0 /* AppDelegate.swift */; };
@@ -26,8 +24,6 @@
 		9AAEBBE121F64F610075842B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9AAEBBF221F657490075842B /* past.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = past.jpg; path = Assets.xcassets/past.jpg; sourceTree = "<group>"; };
 		9AAEBBF321F657490075842B /* future.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = future.jpg; path = Assets.xcassets/future.jpg; sourceTree = "<group>"; };
-		9AAEBBF421F657490075842B /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Assets.xcassets/background.jpg; sourceTree = "<group>"; };
-		9AAEBBF521F657490075842B /* appName.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = appName.jpg; path = Assets.xcassets/appName.jpg; sourceTree = "<group>"; };
 		9AAEBBF621F657490075842B /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButton.png; path = Assets.xcassets/backButton.png; sourceTree = "<group>"; };
 		9AAEBBF721F657490075842B /* small-button-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "small-button-hi.png"; path = "Assets.xcassets/small-button-hi.png"; sourceTree = "<group>"; };
 		9AC0D76E21CC00BF0070E7A0 /* ThirdProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,9 +64,7 @@
 		9AC0D77021CC00BF0070E7A0 /* ThirdProject */ = {
 			isa = PBXGroup;
 			children = (
-				9AAEBBF521F657490075842B /* appName.jpg */,
 				9AAEBBF621F657490075842B /* backButton.png */,
-				9AAEBBF421F657490075842B /* background.jpg */,
 				9AAEBBF321F657490075842B /* future.jpg */,
 				9AAEBBF221F657490075842B /* past.jpg */,
 				9AAEBBF721F657490075842B /* small-button-hi.png */,
@@ -146,9 +140,7 @@
 				9AAEBBF921F657490075842B /* future.jpg in Resources */,
 				9AC0D77C21CC00C00070E7A0 /* LaunchScreen.storyboard in Resources */,
 				9AC0D77921CC00C00070E7A0 /* Assets.xcassets in Resources */,
-				9AAEBBFA21F657490075842B /* background.jpg in Resources */,
 				9AAEBBFD21F657490075842B /* small-button-hi.png in Resources */,
-				9AAEBBFB21F657490075842B /* appName.jpg in Resources */,
 				9AC0D77721CC00BF0070E7A0 /* Main.storyboard in Resources */,
 				9AAEBBFC21F657490075842B /* backButton.png in Resources */,
 				9AAEBBF821F657490075842B /* past.jpg in Resources */,
